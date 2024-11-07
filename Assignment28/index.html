@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment28</title>
+    <style>
+        .container{
+            width: 70%;
+            border: 6px double black;
+            border-radius: 50px;
+            margin: 150px auto;
+            padding :20px;
+            background-color: #4e4c4c;
+            color: aliceblue;
+            height: 400px;
+            
+            
+        }
+        .app-heading{
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: yellow;
+          
+        }
+        img{
+            display: block;
+            margin: 3px auto;
+            height: 250px;
+           
+          
+           
+        }
+        .btn-group{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .btn{
+            padding: 10px;
+            font-size: 20px;
+            border-radius:15px;
+            color: rgb(0, 0, 0);
+            border: solid black 3px;
+            margin: 15px;
+        }
+        .btn1{
+            background-color: rgb(222, 222, 98);
+        }
+        .btn2{
+            background-color:rgb(105, 185, 217);
+        }
+        .btn3{
+            background-color:rgb(230, 228, 228);
+        }
+    </style>
+</head>
+<body id="cont">
+    
+    <div class="container" id="coloro">
+        <h1 class="app-heading">Seasons...</h1>
+        <img src="./img/allseason (1).jpeg" alt="bulb" id="season">
+    
+        <div class="btn-group" id="tocol8">
+          <button class="btn btn1" onclick="summerseason()" >Summer</button>   
+          <button class="btn btn2" onclick="winterseason()" >Winter</button>   
+          <button class="btn btn3" onclick="rainyseason()" >Rainy</button>   
+
+        </div>
+        <script>
+            function summerseason(){
+                const Seasons=document.getElementById("season")
+                Seasons.src = './img/summerseason.jpeg'
+                const cont=document.getElementById("cont")
+                cont.style.backgroundColor='#e8af10'
+                const coloro=document.getElementById("coloro")
+                coloro.style.color='#e8af10';
+                 }
+            function winterseason(){
+                const season=document.getElementById("season")
+                season.src = './img/winter.jpeg'
+                const cont=document.getElementById("cont")
+                cont.style.backgroundColor='#b3b6b9'
+                const coloro=document.getElementById("coloro")
+                coloro.style.color='#b3b6b9'
+                 }
+            function rainyseason(){
+                const season=document.getElementById("season")
+                 season.src = './img/rainy.jpeg'
+                const cont=document.getElementById("cont")
+                cont.style.backgroundColor='#a7cff1'
+                const coloro=document.getElementById("coloro")
+                coloro.style.color='#a7cff1'
+                 }
+
+        </script>
+</body>
+</html>
